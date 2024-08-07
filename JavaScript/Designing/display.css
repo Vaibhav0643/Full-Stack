@@ -1,0 +1,87 @@
+/*
+When there is situation where two elements are overlapping each other. 
+The element which is written first in the html will go under the one which is written after.
+This property can be controlled by z-index
+It decides the stack level of the element.
+overlapping elements with a larger z-index cover those with a smaller one.
+z-index: auto(0)
+z-index: 1/2/3....  --> Higher Priority
+z-index: -1/2-/-3....  --> lesser Priority
+*/
+
+
+
+/* *{
+    margin: 0px;
+} */
+
+/*div{
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 2px solid brown;
+  display: inline-block;
+}*/
+
+#box1 {
+  /*if static -> top,right left, bottom and z-index will not work */
+
+  position: static;                      
+    /* top: 25px; */
+  /* right: 25px; */
+}
+
+#box2 {
+  /* if relative -> top,right left, bottom and z-index will work */
+  /*element is relative to itself*/
+
+  position: relative;
+  top: 20px;
+  left: 10px;
+  z-index: 1;
+}
+
+#box3 {
+    /*positioned relative to its closest positioned(non-static) ancestor(in this case body tag). --> (removed from the flow)*/
+    
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#box4 {
+    /* positioned relative to the browser. --> (removed from the flow)*/
+    
+    position: fixed;
+    /* right: 10px; */
+    /* left: 20px; */
+    
+    top: 10px;
+    /* bottom: 0;    */
+    /* left: 0; */
+    /* width: 100%; */
+    /* width: 100vw; */
+    z-index: 3;
+}
+
+
+#box5 {
+    /* positioned based on user's scroll position*/
+  
+    position: sticky;
+    top: 0px;
+  }
+  
+
+
+div{
+  height: 100px;
+  width: 100px;
+  background-image: url("shoesreturn.png");
+  /* background-color: black; */
+  background-size: cover;
+  color: white;
+  position: fixed;
+  right: 0px;
+  top: 50px;
+}

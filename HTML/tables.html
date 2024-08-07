@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table {
+            /* width: 100%; */
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #b9b9b9;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Table-1 -->
+
+    <table style="width: 100%" ;>
+        <colgroup>
+            <col span="2" style="background-color: aqua;" />
+        </colgroup>
+
+        <tr>
+            <th>Country</th>
+            <th>CountryCode</th>
+            <th>Email</th>
+        </tr>
+
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+
+        <tr>
+            <td>United State of America</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+
+        <tr>
+            <td>Japan</td>
+            <td>jp</td>
+            <td>jp@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>cn</td>
+            <td>cn@google.com</td>
+        </tr>
+    </table>
+
+    <!-- Table-2 -->
+    <table>
+
+        <tr>
+            <th colspan="4">Coutry</th>
+            <td>India</td>
+            <td>Japan</td>
+            <td>China</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Code</th>
+            <td>IN</td>
+            <td>JP</td>
+            <td>CN</td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td>Gmail</td>
+            <td>google</td>
+            <td>yahoo</td>
+        </tr>
+    </table>
+
+
+    <!-- Table-3 -->
+    <table>
+        <caption>
+            <br>
+            <hr>
+            Front-end web developer course 2021
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Person</th>
+                <th scope="col">Most interest in</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Chris</th>
+                <td>HTML tables</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th scope="row">Dennis</th>
+                <td>Web accessibility</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <th scope="row">Sarah</th>
+                <td>JavaScript frameworks</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <th scope="row">Karen</th>
+                <td>Web performance</td>
+                <td>36</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Average age</th>
+                <td>33</td>
+            </tr>
+        </tfoot>
+
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+</body>
+
+</html>

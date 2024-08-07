@@ -1,0 +1,297 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    border-bottom: 10px solid #18105b;
+    margin-bottom: 10px;
+    padding: 8px 0px;
+}
+
+.navBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+
+@font-face {
+    font-family: "mPlus1";
+    src: url(fonts/MPLUS1-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: mPlus1, sans-serif;
+}
+
+/* -------------------------- Nav Bar -------------------------- */
+@keyframes revealText {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 37%;
+    }
+}
+
+.navHeading {
+    padding-top: 4px;
+    color: #19105b;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: revealText 3s ease-out infinite;
+}
+
+/* -------------------------- LOGIN CSS -------------------------- */
+
+.jmanLogo {
+    position: relative;
+    background-position-x: 0%;
+    margin-left: 0%;
+    margin-right: 1100px;
+    margin-bottom: 500px;
+}
+
+
+.jmanLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position-x: 0%;
+    margin-left: 0%;
+    padding: 2rem;
+
+    /* margin-right: 1100px;
+    margin-bottom: 500px; */
+}
+
+.jmanLogo img {
+    width: 100%;
+    height: fit-content;
+}
+
+.sideImage {
+    position: absolute;
+    width: 24rem;
+    height: 24rem;
+    margin-left: 55rem;
+    margin-top: 2.5rem;
+    display: inline;
+}
+
+@font-face {
+    font-family: "cursive";
+    src: url(fonts/cursive/CedarvilleCursive-Regular.ttf);
+}
+
+.listLogin {
+    color: #ff095c;
+    line-height: 2.5;
+    position: absolute;
+
+    width: 24rem;
+    height: 24rem;
+    margin-right: 55rem;
+    margin-top: 2.5rem;
+    display: inline;
+}
+
+.loginHeading {
+    padding-top: 4px;
+    color: #4a4a4a;
+}
+
+.loginBox {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(213, 243, 255);
+    background-image: url(../images/backgroundImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin: 0;
+    padding: 0;
+    /* background-position: 0 2px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: #e7e7e7;
+    border-radius: 7px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 2px 4px 0 #fbdafd, 0 3px 10px 0 #f2f1f6;
+}
+
+.newUserRegister {
+    /* background-color: #d1cfde; */
+    color: #19105b;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.loginForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginDiv {
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginLabel {
+    /* color: white; */
+    /* background-color: #7E78AA; */
+    border-radius: 7px;
+    /* padding: 5px 15px; */
+    width: fit-content;
+    margin-bottom: 5px;
+    color: #19105b;
+}
+
+.loginInput {
+    /* background-color: #f2f1f6; */
+    background-color: inherit;
+    padding-left: 3px;
+    margin-top: 5px;
+    border-bottom: 2px solid #ff6196;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.loginImageButton {
+    position: relative;
+    margin-left: auto;
+}
+
+.loginBtn {
+    background-color: #18105b;
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 60px;
+    padding: 5px;
+    padding-left: 30px;
+    border-radius: 60px;
+    outline: 0;
+}
+
+.loginBtn:hover {
+    background-color: #ff095c;
+}
+
+/* ----------- Mentor Registration CSS ------------- */
+/* 
+.mentorHeading {
+    color: #4a4a4a;
+}
+
+.mentorBox {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(images/backgroundImage3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin: 0;
+    padding: 0;
+}
+
+.mentor {
+    display: flex;
+    width: 600px;
+    height: 560px;
+
+    border-radius: 7px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    margin-right: 8rem;
+
+    box-shadow: 0 6px 4px 0 #f2f1f6, 0 3px 10px 0 #f2f1f6; 
+}
+
+.regHeading {
+    margin-right: 8rem;
+}
+
+.mentorForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.mentorDiv {
+    width: 75%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mentorLabel {
+    color: #19105b;
+}
+
+.mentorInput {
+    border-bottom: 2px solid #ff6196;
+    width: 200px;
+    background-color: #f2f1f6;
+    outline: 0;
+}
+
+.mentorBtn {
+    background-color: #19105b;
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 75px;
+    padding: 5px;
+    padding-left: 30px;
+    border-radius: 60px;
+}
+
+.mentorBtn:hover {
+    background-color: #ff095c;
+} */
